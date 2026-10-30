@@ -799,7 +799,7 @@ a {
 
 /* Philosophy Section */
 .philosophy-section {
-  background: var(--bg-sand);
+  background: #ffffff;
   border-top: 1px solid var(--border-subtle);
   border-bottom: 1px solid var(--border-subtle);
 }
@@ -838,7 +838,7 @@ a {
 
 .pillar-badge {
   position: absolute;
-  top: -12px;
+  top: 14px;
   right: 1.5rem;
   background: var(--color-glow-red);
   color: #fff;
@@ -921,7 +921,8 @@ a {
 
 /* About / Experience Section */
 .about-section {
-  background: #ffffff;
+  background: var(--bg-dark);
+  color: #fff;
 }
 
 .about-container {
@@ -972,14 +973,14 @@ a {
 .lead-bio-p {
   font-size: 1.18rem;
   line-height: 1.6;
-  color: var(--color-black);
+  color: #fff;
   font-weight: 600;
   margin-bottom: 1.15rem;
 }
 
 .bio-body-p {
   font-size: 1rem;
-  color: var(--text-muted);
+  color: #94a3b8;
   margin-bottom: 1.75rem;
 }
 
@@ -996,7 +997,7 @@ a {
   gap: 1.15rem;
   align-items: flex-start;
   padding-bottom: 1rem;
-  border-bottom: 1px solid var(--border-subtle);
+  border-bottom: 1px solid rgba(255,255,255,0.12);
 }
 
 .timeline-row:last-child {
@@ -1046,7 +1047,7 @@ a {
 
 /* Gallery Showcase */
 .gallery-section {
-  background: var(--bg-sand);
+  background: #ffffff;
 }
 
 .gallery-grid {
@@ -1101,8 +1102,9 @@ a {
 
 /* Services Grid */
 .services-section {
-  background: #ffffff;
-  border-top: 1px solid var(--border-subtle);
+  background: var(--bg-dark);
+  color: #fff;
+  border-top: none;
 }
 
 .services-grid {
@@ -1169,7 +1171,8 @@ a {
 
 /* Booking Embed Section (Setmore) */
 .booking-section {
-  background: var(--bg-sand);
+  background: var(--bg-dark);
+  color: #fff;
 }
 
 .booking-box {
@@ -1216,10 +1219,10 @@ a {
 
 /* Facility Section - Bold Black & Glowing Neon Green */
 .facility-section {
-  background: var(--bg-dark);
-  color: #fff;
-  border-top: 1px solid rgba(34, 197, 94, 0.25);
-  border-bottom: 1px solid rgba(34, 197, 94, 0.25);
+  background: #ffffff;
+  color: var(--color-black);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
 }
 
 .facility-container {
@@ -1234,15 +1237,11 @@ a {
   text-shadow: 0 0 10px rgba(34, 197, 94, 0.5);
 }
 
-.facility-section .section-title {
-  color: #fff;
-}
+.facility-section .section-title {`r`n  color: var(--color-black);`r`n}
 
 .facility-desc {
   font-size: 1.05rem;
-  color: #cbd5e1;
-  line-height: 1.65;
-  margin-bottom: 1.75rem;
+  color: #475569;`r`n  line-height: 1.65;`r`n  margin-bottom: 1.75rem;
 }
 
 .facility-points {
@@ -1254,7 +1253,7 @@ a {
 
 .point-item {
   font-size: 0.95rem;
-  color: #f1f5f9;
+  color: #1e293b;
   padding-left: 1.35rem;
   position: relative;
 }

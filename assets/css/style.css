@@ -1052,7 +1052,7 @@ a {
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem;
   margin-top: 3rem;
 }
@@ -1512,3 +1512,56 @@ a {
   }
 }
 
+
+
+/* ==========================================================================
+   DARK & LIGHT THEME COLOR CORRECTIONS
+   ========================================================================== */
+
+/* 1. Experience / About Section (Dark Background) */
+.about-section .section-title {
+  color: #ffffff !important;
+}
+.about-section .lead-bio-p {
+  color: #ffffff !important;
+}
+.about-section .bio-body-p {
+  color: #cbd5e1 !important;
+}
+.about-section .timeline-info h4 {
+  color: #ffffff !important;
+}
+.about-section .timeline-info p {
+  color: #94a3b8 !important;
+}
+.about-section .about-image-card {
+  background: #121614;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.about-section .img-caption {
+  background: #121614 !important;
+  color: #cbd5e1 !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* 2. Services Section (Dark Background) */
+.services-section .section-title {
+  color: #ffffff !important;
+}
+.services-section .section-subtitle {
+  color: #94a3b8 !important;
+}
+
+/* 3. Facility Section (Light Background) - Outline Button Fix */
+.facility-section .btn-outline {
+  color: var(--color-black) !important;
+  border: 1.5px solid var(--color-black) !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.facility-section .btn-outline:hover {
+  background: var(--color-neon-green) !important;
+  border-color: var(--color-neon-green) !important;
+  color: var(--color-black) !important;
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.5) !important;
+}

@@ -1630,3 +1630,29 @@ a {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Big House Logo Badge in Facility Section */
+.facility-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.facility-badge-row .section-tag {
+  margin-bottom: 0;
+}
+
+.facility-logo-mark {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+  display: inline-block;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.08));
+  transition: var(--transition);
+}
+
+.facility-logo-mark:hover {
+  transform: scale(1.08);
+}

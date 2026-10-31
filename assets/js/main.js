@@ -83,4 +83,18 @@ document.addEventListener('DOMContentLoaded', () => {
       openModal(img.src, img.alt, caption);
     });
   });
+
+  // Accordion Expand/Collapse for FAQ
+  const faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(item => {
+    const trigger = item.querySelector('.faq-trigger');
+    if (trigger) {
+      trigger.addEventListener('click', () => {
+        const isOpen = item.classList.contains('active');
+        // Toggle current item
+        item.classList.toggle('active');
+        trigger.setAttribute('aria-expanded', !isOpen);
+      });
+    }
+  });
 });
